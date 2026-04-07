@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <title>Bananley-Produtos</title>
+    <link rel="icon" href="assets/icone.png">
+<style>
+    body {
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      background-image: url("assets/foto1.png");
+      overflow-x: hidden;
+      box-sizing: border-box;
+    }
+
+    .banner {
+      height: 100px;
+      margin: 0 auto;
+      top: 0;
+      position: fixed;
+      text-align: center;
+      margin-right: 0px;
+      margin-left: 0px;
+      z-index: 10;
+      background-image: linear-gradient(to right, #839705, #aaa706, #fbff00);
+      justify-content: center;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0px; 
+    }
+
+    .card {
+      height: 100px;
+      width: 300px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 20px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      margin: 0 auto;
+      background-image: linear-gradient(to right, #849705, #aaa706, #fbff00);
+      align-items: center;
+      border-radius: 20px;
+      animation: fadein 1s ease-in-out;
+    }
+
+   .button { 
+      background-color: #FFF9A3;
+      border-radius: 10px;
+      width: 70px;
+      margin: 0 auto;
+      display: flex;
+      height: 70px;
+      border: none;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+      align-items: center;
+    }
+
+    .button:hover{
+      background-color: #849705;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadein {
+      from {opacity: 0; transform: translateY(20px); }
+      to {opacity: 1; transform: translateY(0px); }
+    }
+
+</style>
+  </head>
+  <body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+
+    <div class="banner">
+      <h1 style="font:sans-serif;">BANANLEY</h1>
+    </div>
+
+    <div>
+      <a href="index.html" class="button" style="color: black; text-decoration: none; width: 90px; height: 30px; margin-top: 150px; background-color: #f8ff34;"><-- Voltar</a>
+    </div>
+
+    <div class="card" style="margin-top: 100px; height: 10%;">
+      <img src="assets/copo2.png" style="width: 100%; margin-right: 20px;">
+      <h1>Bananley Forest</h1>
+      <p><strong>Bananley Forest</strong> mantém sua bebida na temperatura ideal com um design simples e elegante.</p>
+      <p>De R̶$̶9̶9̶,̶9̶9 para R$79,99</p>
+      <a href="index.html" class="button" style="color: black; text-decoration: none; width: 90px; height: 30px; margin-top: 15px">Comprar</a>
+  </body>
+</html>

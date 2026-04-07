@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="assets/icone.png">
+    <title>Bananley</title>
+<style>
+    body {
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      background-image: url("assets/foto1.png");
+      overflow-x: hidden;
+      box-sizing: border-box;
+    }
+
+    .banner {
+      height: 100px;
+      margin: 0 auto;
+      top: 0;
+      position: fixed;
+      text-align: center;
+      margin-right: 0px;
+      margin-left: 0px;
+      z-index: 10;
+      background-image: linear-gradient(to right, #839705, #aaa706, #fbff00);
+      justify-content: center;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0px; 
+    }
+
+    .card {
+      height: 100px;
+      width: 300px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      animation: fadein 1s ease-in-out;
+      padding: 20px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      margin: 0 auto;
+      background-image: linear-gradient(to right, #849705, #aaa706, #fbff00);
+      align-items: center;
+      border-radius: 20px;
+    }
+
+    .button{ 
+      background-color: #FFF9A3;
+      border-radius: 10px;
+      width: 70px;
+      display: flex;
+      height: 70px;
+      box-shadow: 0px 4px 10px #0000;
+      border: none;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+      align-items: center;
+    }
+
+    .button:hover{
+      background-color: #849705;
+      transform: scale(1.05);
+    }
+
+   @keyframes fadein {
+    from {opacity: 0; transform: translateY(20px); }
+    to {opacity: 1; transform: translateY(0px); }
+   }
+
+</style>
+  </head>
+  <body>
+    <header></header>
+    <main></main>
+    <footer></footer>
+
+    <div class="banner">
+      <a href="#inicio" style="text-decoration: none;"><h1 style="font:sans-serif; color: black;">BANANLEY</h1></a>
+    <a href="#sobre" style="color: black; text-decoration: none; margin-left: 40px;"><p>SOBRE</a>
+    <a href="#produtos" style="color: black; text-decoration: none; margin-left: 40px;">PRODUTOS</a>
+    <a href="#feedback" style="color: black; text-decoration: none; margin-left: 40px;">FEEDBACK</a>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-top: 0px;">
+      <h1 style="position: absolute; margin-top: 25%; margin-right: 60%; text-align: center; font-size: 60px; color: rgb(0, 0, 0); animation: fadein 2s ease-in-out;">Seu novo <strong>Bananley</strong> com 20% OFF!</h1>
+      <img id="inicio" src="assets/copo.png" style="width: 100%;">
+    </div>
+
+    <div id="sobre" class="card" style="margin-top: 100px; height: 200px; width: 500px;">
+      <h1>SOBRE NÓS</h1>
+      <p>A <strong>Bananley</strong> é uma empresa inovadora criada pelos mesmos fundadores da Bananas Grill, com a missão de transformar o mercado de copos térmicas. Inspirada pela experiência, qualidade e inovação da marca original.</p>
+    </div>
+
+    <div id="produtos" class="card" style="margin-top: 100px; height: 200px; width: 380px; padding: 20px;">
+      <h1>PRODUTOS</h1>
+      <p>Adquira seu mais novo copo térmico da <strong>Bananley</strong> aqui!</p>
+      <a href="produtos.html" class="button" style="color: black; text-decoration: none; width: 90px; height: 30px; margin-top: 10px;">Ver produtos</a>
+    </div>
+  
+    <div id="feedback" class="card" style="margin-top: 100px; height: 200px; width: 380px; padding: 20px;">
+      <h1>FEEDBACK</h1>
+      <p>Nos diga o que podemos melhorar aqui na <strong>Bananley</strong>! Agradecemos todo o feedback!</p>
+      <a href="feedback1.html" class="button" style="color: black; text-decoration: none; width: 90px; height: 30px; margin-top: 10px;">Enviar feedback</a>
+    </div>
+
+  </body>
+</html>
