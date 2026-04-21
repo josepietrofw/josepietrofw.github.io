@@ -48,10 +48,6 @@
       animation: fadein 1s ease-in-out;
     }
 
-    .card:hover {
-      scale: 1.02;
-    }
-
    .button { 
       background-color: #FFF9A3;
       border-radius: 10px;
@@ -69,10 +65,6 @@
     .button:hover{
       background-color: #849705;
       transform: scale(1.05);
-    }
-
-    .button:active{
-      transform: scale(1.10);
     }
 
     @keyframes fadein {
@@ -96,14 +88,21 @@
     </div>
 
     <div class="card" style="margin-top: 100px; height: 10%;">
-      <img src="assets/copo2.png" style="width: 100%; margin-right: 20px;">
+      <img src="assets/copo2.png" id="produto" style="width: 130%; margin-right: 20px;">
       <h1>Bananley Forest 473mL</h1>
       <p><strong>Bananley Forest</strong> mantém sua bebida na temperatura ideal com um design simples e elegante.</p>
       <p>Escolha a sua cor!</p>
-      <li>Branco</li>
-      <a href="preto.html" style="color: black;"><li>Preto</li></a>
-      <a href="laranja.html" style="color: black;"><li>Laranja</li></a>
+      <li style="cursor: pointer;" onclick="trocarimagem('assets/copo2.png')"><u>Branco</u></li>
+      <li style="cursor: pointer;" onclick="trocarimagem('assets/laranja.png')"><u>Laranja</u></li>
+      <li style="cursor: pointer" onclick="trocarimagem('assets/preto.png')"><u>Preto</u></li>
       <p>De R̶$̶9̶9̶,̶9̶9 para R$79,99</p>
       <a href="index.html" class="button" style="color: black; text-decoration: none; width: 90px; height: 30px; margin-top: 15px">Comprar</a>
+      <script>
+        
+        function trocarimagem(caminho) {
+          document.getElementById('produto').src = caminho
+        }
+
+</script>
   </body>
 </html>
