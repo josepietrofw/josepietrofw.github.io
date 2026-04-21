@@ -67,6 +67,10 @@
       transform: scale(1.05);
     }
 
+    .button:active{
+      transform: scale(1.10);
+    }
+
     @keyframes fadein {
       from {opacity: 0; transform: translateY(20px); }
       to {opacity: 1; transform: translateY(0px); }
@@ -96,7 +100,9 @@
       <li style="cursor: pointer;" onclick="trocarimagem('assets/laranja.png')"><u>Laranja</u></li>
       <li style="cursor: pointer" onclick="trocarimagem('assets/preto.png')"><u>Preto</u></li>
       <p>De R̶$̶9̶9̶,̶9̶9 para R$79,99</p>
-      <a href="index.html" class="button" style="color: black; text-decoration: none; width: 90px; height: 30px; margin-top: 15px">Comprar</a>
+      <a onclick="Swal.fire({  title: 'Erro!', text: 'Atualmente não possuímos este produto no estoque.' ,showConfirmButton: true, color: '#000000', background: '#C8D60B', confirmButtonColor: '#000000' ,icon: 'error', confirmButtonText: 'OK' })"
+      id="botao" class="button" style="color: black; text-decoration: none; width: 90px; height: 30px; margin-top: 15px; cursor: pointer;">Comprar</a>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
       <script>
         
         function trocarimagem(caminho) {
